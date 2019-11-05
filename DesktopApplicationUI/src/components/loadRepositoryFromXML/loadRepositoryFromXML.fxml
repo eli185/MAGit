@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane  maxHeight="500.0" maxWidth="-Infinity" minHeight="178.0" minWidth="-Infinity" prefHeight="180.0" prefWidth="830.0" stylesheets="@loadRepositoryFromCSS.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.loadRepositoryFromXML.LoadRepositoryFromXMLController">
+   <center>
+      <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="178.0" prefWidth="830.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" spacing="10.0">
+               <children>
+                  <Button fx:id="browseFileButton" styleClass="browseFileButton " maxWidth="150.0" minWidth="150.0" mnemonicParsing="false" onAction="#browseFileButtonAction" prefWidth="150.0" stylesheets="@loadRepositoryFromCSS.css" text="Browse" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="600.0">
+               <children>
+                  <Label styleClass="information-label" text="File:">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="selectedFileName" styleClass="task-message-label">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <Separator maxHeight="20.0" minHeight="20.0" prefHeight="20.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Separator>
+            <GridPane maxHeight="100.0" minHeight="100.0" prefHeight="100.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="NEVER" maxWidth="140.0" minWidth="10.0" prefWidth="140.0" />
+                <ColumnConstraints hgrow="NEVER" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="NEVER" maxWidth="140.0" minWidth="10.0" prefWidth="140.0" />
+                  <ColumnConstraints hgrow="NEVER" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="NEVER" maxWidth="140.0" minWidth="10.0" prefWidth="140.0" />
+                  <ColumnConstraints hgrow="NEVER" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+              </rowConstraints>
+               <children>
+                  <Label maxWidth="1.7976931348623157E308" styleClass="information-label" text="Task message">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin></Label>
+                  <Label maxWidth="1.7976931348623157E308" styleClass="information-label" text="Task Progress" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin></Label>
+                  <Label fx:id="taskMessageLabel" maxWidth="1.7976931348623157E308" styleClass="task-message-label" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.halignment="LEFT" GridPane.valignment="CENTER" />
+                  <ProgressBar fx:id="taskProgressBar" styleClass="taskProgressBar" maxWidth="1.7976931348623157E308" progress="0.0" stylesheets="@loadRepositoryFromCSS.css" GridPane.columnIndex="2" GridPane.columnSpan="5" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </ProgressBar>
+                  <Label fx:id="progressPercentLabel" maxWidth="1.7976931348623157E308" styleClass="task-counter-label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

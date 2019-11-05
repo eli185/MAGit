@@ -1,0 +1,117 @@
+.mainBorderPane{
+    -fx-background-color: red;
+}
+
+/*Menu Bar*/
+.menu-bar {
+    -fx-background-color: #fc7d02;
+
+}
+
+.menuItem{
+    -fx-background-color: red;
+    -fx-font-family: "Constantia";
+
+}
+
+/*Menus*/
+.menu .label {
+    -fx-text-fill: yellow;
+    -fx-font-family: "Constantia";
+}
+
+/*Menu Items*/
+.menu-item:focused {
+    -fx-background-color: lightblue;
+}
+.menu-item .label {
+    -fx-text-fill: yellow;
+    -fx-background-color: red;
+}
+
+.Commit-information {
+    -fx-font-size: 22px;
+    -fx-font-family: "Constantia";
+    -fx-font-weight: bold;
+    -fx-text-fill: yellow;
+    -fx-fill: #818181;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.2) , 6, 0.0 , 0 , 2 );
+}
+
+.GridPaneLabels{
+    -fx-text-fill: yellow;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-font-family: "Constantia";
+
+}
+
+.CurrentUser-lable{
+    -fx-text-fill: yellow;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-font-family: "Constantia";
+}
+
+.CurrentUser-lable2{
+    -fx-text-fill: yellow;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-font-family: "Constantia";
+}
+
+.CurrentRepositoryLocation-lable{
+    -fx-text-fill: yellow;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-font-family: "Constantia";
+}
+
+.CurrentRepositoryLocation-lable2{
+    -fx-text-fill: yellow;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-font-family: "Constantia";
+}
+
+.CommitTreeScrollPane{
+    -fx-background-color: #ff6957;
+}
+
+.scroll-pane > .viewport{
+    -fx-background-color:transparent;
+}
+
+
+/*.menuItem {
+    -fx-background-color: linear-gradient(#E9967A, #FF69B4);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+.menuItem:hover{
+    -fx-background-color: pink;
+}
+.menuBar{
+    -fx-background-color: pink;
+    -fx-border-width:1px ;
+}
+.mainBorderPane{
+    -fx-background-color:pink;
+}
+.labelsGridPane{
+    -fx-background-color:pink;
+    -fx-font-family: "Bell MT";
+    -fx-font-size: 12px;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+.treebackground{
+    -fx-background-color: pink;
+}
+.scroll-pane > .viewport{
+    -fx-background-color:transparent;
+}
+
+ */

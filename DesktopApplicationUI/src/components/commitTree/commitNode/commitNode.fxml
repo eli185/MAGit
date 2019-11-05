@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.TextFlow?>
+
+<GridPane fx:id="gridPane" hgap="5.0" onMouseClicked="#OnNodeClicked" onMouseEntered="#OnNodeEntered" onMouseExited="#OnNodeExited" styleClass="single-commit-row-container" stylesheets="@commitNode.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.commitTree.commitNode.CommitNodeController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="ALWAYS" />
+      <ColumnConstraints hgrow="NEVER" minWidth="-Infinity" />
+      <ColumnConstraints hgrow="NEVER" minWidth="-Infinity" />
+      <ColumnConstraints hgrow="ALWAYS" />
+      <ColumnConstraints hgrow="NEVER" />
+      <ColumnConstraints hgrow="ALWAYS" />
+      <ColumnConstraints hgrow="NEVER" maxWidth="0.7999633789062273" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints hgrow="ALWAYS" />
+      <ColumnConstraints hgrow="ALWAYS" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="10.0" minHeight="10.0" prefHeight="10.0" vgrow="ALWAYS" />
+    <RowConstraints vgrow="ALWAYS" />
+      <RowConstraints maxHeight="10.0" minHeight="10.0" prefHeight="10.0" vgrow="NEVER" />
+  </rowConstraints>
+   <children>
+      <Circle fx:id="CommitCircle" fill="#087fee" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="5.0" right="10.0" />
+         </GridPane.margin>
+      </Circle>
+      <Label fx:id="commitTimeStampLabel" alignment="CENTER" styleClass="timestamp-label" text="02.07.2019-22:36:57" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin></Label>
+      <Label fx:id="messageLabel" styleClass="message-label" text="message" GridPane.columnIndex="8" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="5.0" />
+         </GridPane.margin></Label>
+      <Label fx:id="committerLabel" styleClass="committer-label" text="commiter lable" GridPane.columnIndex="5" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin></Label>
+      <Separator maxHeight="20.0" minHeight="20.0" orientation="VERTICAL" prefHeight="20.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+      <Separator maxHeight="20.0" minHeight="20.0" orientation="VERTICAL" prefHeight="20.0" prefWidth="0.0" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+      <Separator maxHeight="20.0" minHeight="20.0" orientation="VERTICAL" prefHeight="20.0" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+      <TextFlow fx:id="pointingBranchTextFlow" onMouseClicked="#OnBranchNameClick" GridPane.columnIndex="7" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+   </children>
+</GridPane>

@@ -1,0 +1,115 @@
+.mainBorderPane{
+    -fx-background-color: black;
+}
+
+/*Menu Bar*/
+.menu-bar {
+    -fx-background-color: #3d3d3d;
+}
+
+/*Menus*/
+.menu .label {
+    -fx-text-fill: white;
+    -fx-font-family: "Bookman Old Style";
+
+}
+
+/*Menu Items*/
+.menu-item:focused {
+    -fx-background-color: blue;
+}
+.menu-item .label {
+    -fx-text-fill: white;
+    -fx-background-color: black;
+}
+
+.menuItem{
+    -fx-background-color: black;
+    -fx-font-family: "Bookman Old Style";
+}
+
+.Commit-information {
+    -fx-font-size: 30px;
+    -fx-font-family: "Bookman Old Style";
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-fill: #818181;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+.GridPaneLabels{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-font-family: "Bookman Old Style";
+}
+
+.CurrentUser-lable{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-font-family: "Bookman Old Style";
+}
+
+.CurrentUser-lable2{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-font-family: "Bookman Old Style";
+}
+
+.CurrentRepositoryLocation-lable{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-font-family: "Bookman Old Style";
+}
+
+.CurrentRepositoryLocation-lable2{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-font-family: "Bookman Old Style";
+}
+
+.CommitTreeScrollPane{
+    -fx-background-color: grey;
+}
+
+.scroll-pane > .viewport{
+    -fx-background-color:transparent;
+}
+
+
+/*.menuItem {
+    -fx-background-color: linear-gradient(#E9967A, #FF69B4);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+.menuItem:hover{
+    -fx-background-color: pink;
+}
+.menuBar{
+    -fx-background-color: pink;
+    -fx-border-width:1px ;
+}
+.mainBorderPane{
+    -fx-background-color:pink;
+}
+.labelsGridPane{
+    -fx-background-color:pink;
+    -fx-font-family: "Bell MT";
+    -fx-font-size: 12px;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+.treebackground{
+    -fx-background-color: pink;
+}
+.scroll-pane > .viewport{
+    -fx-background-color:transparent;
+}
+
+ */

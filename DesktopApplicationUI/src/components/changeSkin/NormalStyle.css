@@ -1,0 +1,112 @@
+/*Menu Bar*/
+.menu-bar {
+    -fx-background-color: #b4b4b4;
+}
+
+/*Menus*/
+.menu .label {
+    -fx-text-fill: black;
+}
+
+/*Menu Items*/
+.menu-item:focused {
+    -fx-background-color: greenyellow;
+}
+.menu-item .label {
+    -fx-text-fill: black;
+}
+
+.Commit-information {
+    -fx-font-size: 22px;
+    -fx-font-family: "Arial Black";
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-fill: #818181;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+.SH1-lable{
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.Diff-lable{
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.PrecedingCommits-lable{
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.Author-lable{
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.DateOfCreation-lable{
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.Message-lable{
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.CurrentUser-lable{
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}
+
+.CurrentRepositoryLocation-lable{
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}
+
+
+
+/*
+.menuItem {
+    -fx-border: none;
+    -fx-color: white;
+    -fx-text-align: center;
+    -fx-text-decoration: none;
+    -fx-display: inline-block;
+    -fx-font-size: 14px;
+}
+.menuItem:hover{
+   -fx-background-color: #0ca6ba;
+}
+.menuBar{
+    -fx-background-color: #ADD8E6;
+    -fx-border-width:1px ;
+}
+.mainBorderPane{
+    -fx-background-color:white;
+}
+.labelsGridPane{
+    -fx-background-color:white;
+    -fx-font-size: 14px;
+}
+.treebackground{
+    -fx-background-color: white;
+}
+.scroll-pane > .viewport{
+    -fx-background-color:transparent;
+}
+
+ */
+
+
+
+

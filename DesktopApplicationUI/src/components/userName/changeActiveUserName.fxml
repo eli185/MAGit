@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="114.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.userName.ChangeActiveUserNameController">
+   <children>
+      <HBox prefHeight="105.0" prefWidth="134.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label text="Enter active user name:">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <VBox prefHeight="123.0" prefWidth="175.0" HBox.hgrow="ALWAYS">
+         <children>
+            <TextField fx:id="newUserNameTextField" prefHeight="26.0" prefWidth="143.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Separator prefHeight="12.0" prefWidth="100.0" VBox.vgrow="ALWAYS" />
+            <Button fx:id="newActiveUserSubmitButton" mnemonicParsing="false" onAction="#OnNewActiveUserSubmitButtonClick" prefHeight="26.0" prefWidth="80.0" text="Submit" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</HBox>
